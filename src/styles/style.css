@@ -77,6 +77,7 @@
          border-bottom: none;
          padding: 0!important;
          margin-left: 0;
+         width: 0!important;
      }
     .nav-item {
         display: none;
@@ -87,7 +88,7 @@
     .right-nav {
         position: absolute;
         top: 2px;
-        left: 180px;
+        left: 120px;
     }
     .mobile-nav {
         display: flex;
@@ -106,7 +107,7 @@
     }
     .navbar-brand  {
         margin-right: 30px!important;
-        margin-left: 120px;
+        margin-left: 50px;
         padding-top: 5px!important;
     }
     .basket {
@@ -120,7 +121,7 @@
     position: fixed;
     width: 36px;
     height: 22px;
-    left: 100px;
+    left: 15px;
     top: 12px;
 }
 
@@ -138,7 +139,7 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-    margin-right: 120px;
+    margin-right: 200px;
     height: 30px;
     width: 30px;
 }
@@ -159,7 +160,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-    background: #F6F8FD;
+    background: #373a47;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
 }
@@ -309,11 +310,15 @@ Note: Beware of modifying this element as it can break the animations - you shou
     filter: opacity(0.5);
 }
 @media (max-width: 767px) {
+    .hero .left {
+        margin-left: 0!important;
+    }
     .product1 {
         width: 375px;
         height: 300px;
         border-radius: 0;
         margin-top: 30px!important;
+        object-fit: contain;
     }
     .thumb {
         display: none!important;
@@ -377,10 +382,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
     .product-control img {
     }
     .previous {
-        right: 228px!important;
+        right: 275px!important;
     }
     .next {
-        left: 400px!important;
+        left: 300px!important;
+    }
+    .product-control img {
+        margin-bottom: 15px;
     }
 }
     /*--------------- Cart ----------------*/
