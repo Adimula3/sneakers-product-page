@@ -69,6 +69,121 @@
     color: #F6F8FD;
 
 }
+.mobile-nav {
+    display: none;
+}
+@media (max-width: 767px) {
+     .navbar {
+         border-bottom: none;
+         padding: 0!important;
+         margin-left: 0;
+     }
+    .nav-item {
+        display: none;
+    }
+    .nav-link {
+        margin-right: 0;
+    }
+    .right-nav {
+        position: absolute;
+        top: 2px;
+        left: 180px;
+    }
+    .mobile-nav {
+        display: flex;
+    }
+    .cart {
+        margin-left: 150px!important;
+        margin-right: 0!important;
+        margin-top: 0;
+        padding: 0!important;
+    }
+    .avatar {
+        height: 30px;
+        width: 30px;
+        margin-top: 0!important;
+        padding: 0!important;
+    }
+    .navbar-brand  {
+        margin-right: 30px!important;
+        margin-left: 120px;
+        padding-top: 5px!important;
+    }
+    .basket {
+        top: 10px;
+        right: 70px;
+    }
+}
+/*--------------- Mobile-Nav ----------------*/
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 22px;
+    left: 100px;
+    top: 12px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+    background: #69707D;
+    height: 5px;
+    width: 30px;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+    background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    margin-right: 120px;
+    height: 30px;
+    width: 30px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #282c34;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: #F6F8FD;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+    display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
 /*--------------- Product ----------------*/
 
 .product1 {
@@ -166,6 +281,9 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+.product-control {
+    display: none!important;
+}
 .minus {
     height: 5px;
     width: 13px;
@@ -190,7 +308,82 @@
 .plus:hover {
     filter: opacity(0.5);
 }
-/*--------------- Cart ----------------*/
+@media (max-width: 767px) {
+    .product1 {
+        width: 375px;
+        height: 300px;
+        border-radius: 0;
+        margin-top: 30px!important;
+    }
+    .thumb {
+        display: none!important;
+    }
+    .product-info {
+        margin-top: 30px!important;
+        margin-left: 30px;
+    }
+    .product-info h5 {
+        margin-top: 0;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .product-info h2 {
+        font-size: 28px;
+        line-height: 32px;
+        width: 327px;
+        margin-bottom: 20px !important;
+    }
+    .product-info p {
+        font-size: 15px;
+        line-height: 25px;
+        width: 327px;
+    }
+    .initial-price {
+        margin-bottom: 20px!important;
+    }
+    .button-items {
+        flex-direction: column;
+        margin: auto;
+    }
+    .item-count {
+        margin-bottom: 20px;
+        width: 327px;
+        height: 56px;
+    }
+    .quantity {
+        margin-top: 20px!important;
+    }
+    .add-to-cart {
+        margin-left: 0!important;
+        width: 327px!important;
+        height: 56px!important;
+    }
+    .light-box {
+        display: none!important;
+    }
+    .lightbox {
+        display: none!important;
+    }
+    .product-control {
+        position: absolute;
+        display: flex !important;
+        border-radius: 50%;
+        padding: 20px;
+        border: none;
+        top: 200px;
+        height: 40px;
+    }
+    .product-control img {
+    }
+    .previous {
+        right: 228px!important;
+    }
+    .next {
+        left: 400px!important;
+    }
+}
+    /*--------------- Cart ----------------*/
 .add-to-cart {
     height: 56px;
     width: 272px;
@@ -300,6 +493,13 @@
     color: #C3CAD9;
     margin-left: 10px;
     margin-top: 20px;
+}
+@media (max-width: 767px) {
+    .carts {
+        top: 480%;
+        left: 96%;
+        z-index: 3;
+    }
 }
 /*--------------- Lightbox ----------------*/
 .light-box {

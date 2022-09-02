@@ -5,6 +5,7 @@ import Brand from "../assets/images/logo.svg";
 import Avatar from "../assets/images/image-avatar.png";
 import Cart from "../pages/cart";
 import CartIcon from '../assets/images/icon-cart.svg';
+import MobileNav from "./mobileNav";
 
 
 const Navbar = ({cartProductQuantity, setCartProductQuantity}) => {
@@ -13,6 +14,7 @@ const Navbar = ({cartProductQuantity, setCartProductQuantity}) => {
       <div>
           <nav id="navbar" className="navbar navbar-expand-lg d-flex">
               <div className="container">
+                  <MobileNav />
                   <NavLink className="navbar-brand" to="/"><img src={Brand} alt="brand"/></NavLink>
                   <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                       <li className="nav-item">

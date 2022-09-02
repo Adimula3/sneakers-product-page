@@ -6,6 +6,8 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import {images} from "../data/images";
 import '../styles/style.css'
 import LightBox from "./lightBox";
+import Prev from "../assets/images/icon-previous.svg";
+import Next from "../assets/images/icon-next.svg";
 
 
 
@@ -47,8 +49,22 @@ const Product = ({productQuantity, setProductQuantity, setCartProductQuantity}) 
                                    onClick={() => setCurrentProductImage(3)}
                                    src={images[3].thumbnail} alt=""/>
                           </div>
-
+                          <button className="product-control previous"
+                                  onClick={() =>
+                                      setCurrentProductImage((prevState) =>
+                                          prevState === 0 ? images.length - 1 : prevState - 1
+                                      )
+                                  }
+                          ><img src={Prev} alt=""/></button>
+                          <button className="product-control next"
+                                  onClick={() =>
+                                      setCurrentProductImage((prevState) =>
+                                          prevState === images.length - 1 ? 0 : prevState + 1
+                                      )
+                                  }
+                          ><img src={Next} alt=""/></button>
                       </div>
+
                   </Col>
                   <Col lg={6}>
                       <div className="product-info">

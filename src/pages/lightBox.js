@@ -10,7 +10,7 @@ const LightBox = ({setLightBox, images}) => {
 
     useOnClickOutside(ref, () => setLightBox(false));
   return (
-      <div className="light-box">
+      <div className=" ">
           <div ref={ref} className="lightbox">
               <MdOutlineClose className="close" onClick={() => setLightBox(false)} />
               <img className="product1" src={images[currentProductImage].png} alt=""
