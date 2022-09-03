@@ -121,7 +121,7 @@
     position: fixed;
     width: 36px;
     height: 22px;
-    left: 15px;
+    left: 35px;
     top: 12px;
 }
 
@@ -139,14 +139,17 @@
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-    margin-right: 200px;
-    height: 30px;
-    width: 30px;
+    top: 15px!important;
+    right: 200px!important;
+    height: 24px;
+    width: 24px;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
     background: #282c34;
+    width: 24px!important;
+    height: 3px!important;
 }
 
 /*
@@ -160,7 +163,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-    background: #373a47;
+    background: #FFFFFF;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
 }
@@ -172,8 +175,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-    color: #b8b7ad;
+    color: #1D2026;
     padding: 0.8em;
+    text-align: left;
+    display: flex;
 }
 
 /* Individual item */
@@ -318,7 +323,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
         height: 300px;
         border-radius: 0;
         margin-top: 30px!important;
-        object-fit: contain;
+        object-fit: cover;
     }
     .thumb {
         display: none!important;
@@ -377,15 +382,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
         padding: 20px;
         border: none;
         top: 200px;
-        height: 40px;
+        height: 56px;
+        width: 56px;
     }
     .product-control img {
     }
     .previous {
-        right: 275px!important;
+        right: 290px!important;
     }
     .next {
-        left: 300px!important;
+        left: 340px!important;
     }
     .product-control img {
         margin-bottom: 15px;
@@ -505,7 +511,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 @media (max-width: 767px) {
     .carts {
         top: 480%;
-        left: 96%;
+        margin-left: 210px;
         z-index: 3;
     }
 }
