@@ -67,6 +67,7 @@
     right: 90px;
     top: 55px;
     color: #F6F8FD;
+    padding-left: 5px;
 
 }
 .mobile-nav {
@@ -204,7 +205,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .thumbnail {
-    margin-left: 85px;
+    margin-left: 10px;
     margin-top: 30px;
 }
 .thumb img {
@@ -315,10 +316,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
     filter: opacity(0.5);
 }
 @media (max-width: 767px) {
+
     .hero .left {
         margin-left: 0!important;
     }
     .product1 {
+        padding-left: 0!important;
         width: 375px;
         height: 300px;
         border-radius: 0;
@@ -490,6 +493,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     color: #F6F8FD;
     border-radius: 10px;
     margin-top: 10px;
+    margin-left: 20px;
 }
 .check-out:hover {
     background: #FFAB6A;
@@ -563,8 +567,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
    margin-bottom: 8px;
 }
 .previous {
-    right: 250px;
+    right: 100px;
 }
 .next {
-    left: 250px;
+    left: 550px;
 }
